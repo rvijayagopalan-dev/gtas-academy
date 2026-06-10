@@ -5,7 +5,19 @@ import Sidebar from "@/components/Sidebar";
 import AIChatPanel from "@/components/AIChatPanel";
 import { useState } from "react";
 import { Sparkles, Menu, X } from "lucide-react";
+import Link from "next/link";
 import clsx from "clsx";
+
+function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      className="px-3 py-1.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-white/8 transition-all"
+    >
+      {children}
+    </Link>
+  );
+}
 
 export default function RootLayout({
   children,
@@ -60,7 +72,12 @@ export default function RootLayout({
               {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
 
-            <div className="flex-1" />
+            {/* Top nav links */}
+            <div className="hidden sm:flex items-center gap-1 flex-1 justify-center">
+              <NavLink href="/">Home</NavLink>
+              <NavLink href="/manifesto">Manifesto</NavLink>
+              <NavLink href="/disciplines">Deep Dives</NavLink>
+            </div>
 
             {/* AI Tutor toggle */}
             <button
