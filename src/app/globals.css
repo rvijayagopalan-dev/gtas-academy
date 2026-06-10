@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a14;
+  --foreground: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Prose overrides */
+.prose pre {
+  font-size: 0.8rem !important;
+  line-height: 1.6 !important;
+  overflow-x: auto;
+}
+
+.prose code {
+  font-size: 0.8rem !important;
+}
+
+.prose table {
+  font-size: 0.8rem !important;
+}
+
+.prose p {
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.prose h3 {
+  margin-top: 1.25rem !important;
+  font-size: 0.9rem !important;
+  color: #e5e7eb !important;
+}
+
+.prose h4 {
+  margin-top: 1rem !important;
+  font-size: 0.85rem !important;
+}
+
+.prose ul {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.prose li {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Background pattern */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(
+    ellipse at 20% 50%,
+    rgba(99, 102, 241, 0.04) 0%,
+    transparent 60%
+  ),
+  radial-gradient(
+    ellipse at 80% 20%,
+    rgba(139, 92, 246, 0.03) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
