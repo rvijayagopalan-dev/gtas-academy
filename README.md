@@ -1,5 +1,8 @@
 # GTAS Academy
 
+> **Author:** Vijayagopalan R · rvijayagopalan.dev@gmail.com
+> **License:** MIT · © 2026 Vijayagopalan R. All rights reserved.
+
 An interactive learning platform for the **General Theory of Adaptive Systems (GTAS)** — built with Next.js 15, TypeScript, Tailwind CSS, and Anthropic Claude AI.
 
 ## What is GTAS?
@@ -142,3 +145,23 @@ Returns `text/event-stream` with lines: `data: {"text": "..."}` and a terminal `
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `ANTHROPIC_API_KEY` | Yes | Anthropic API key from console.anthropic.com |
+
+---
+
+## Author
+
+**Vijayagopalan R**
+- Email: [rvijayagopalan.dev@gmail.com](mailto:rvijayagopalan.dev@gmail.com)
+- GitHub: [@rvijayagopalan-dev](https://github.com/rvijayagopalan-dev)
+
+## License
+
+Copyright © 2026 Vijayagopalan R. All rights reserved.
+
+This project is licensed under the [MIT License](LICENSE).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
